@@ -96,9 +96,9 @@ public class JobData {
             for (Map.Entry<String, String> key : row.entrySet()) {
                 String aValue = key.getValue();
 
-//                if (jobs.contains(key)) {
-//                    continue;
-//                }
+                if (jobs.contains(row)) {
+                    continue;
+                }
 
                 if (aValue.toLowerCase().contains(value.toLowerCase())) {
                     jobs.add(row);
